@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>hello world</title>
+    <title>clean code notes</title>
     <meta name="description" content="">
     <meta name="author" content="Lin Zhixiong">
 
@@ -95,25 +95,23 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>hello world <small>Supporting tagline</small></h1>
+  <h1>clean code notes <small>Supporting tagline</small></h1>
 </div>
 
 <div class="row">
   <div class="span8">
-    <p>This is the first blog using markdown file!</p>
+    <p>Try/Catch 代码块经常破坏了代码的结构，把正常错里和错误处理混为一谈。因此应当把错误处理单独处理，放在一个单独的方法里，并却这个方法仅仅做错误处理一件事情。在这样的方法里try应当是第一个单词，并且catch/finaly 后面也不该有其他的内容。 public void delete(){ try{ deletePage(); } catch{ logError(); } }</p>
 
-<pre><code>What is markdown ?</code></pre>
-
-<p>The markdown is descripted on <a href='http://en.wikipedia.org/wiki/markdown'>wikipedia</a> as this.</p>
+<p>public void deletePage(){ &#8230;.. &#8230;.. } 在上面例子中delete只做与错误处理相关的事情，忽略了deletePage的逻辑。 deletePage也只处理删除页面的逻辑，忽略了错误处理相关的事情。这样美妙的隔离更容易理解和修改。</p>
     <hr>
     <div class="pagination">
       <ul>
       
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="prev"><a href="/2012/04/05/hello-world" title="hello world">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/2012/04/27/clean-code-notes" title="clean code notes">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>
@@ -143,24 +141,8 @@
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>05 April 2012</span></div>
+    <div class="date"><span>27 April 2012</span></div>
 
-  
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    
-    
-
-
-  
-     
-    	<li><a href="/tags.html#Hello world-ref">Hello world <span>1</span></a></li>
-    
-  
-
-
-
-    </ul>
     
   </div>
 </div>

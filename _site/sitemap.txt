@@ -7,4 +7,5 @@ http://username.github.com/atom.xml
 http://username.github.com/archive.html
 http://username.github.com/tags.html
 
+http://username.github.com/2012/04/27/clean-code-notes
 http://username.github.com/2012/04/05/hello-world
