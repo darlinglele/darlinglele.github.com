@@ -4,7 +4,7 @@
  <title>Home</title>
  <link href="http://username.github.com/atom.xml" rel="self"/>
  <link href="http://username.github.com"/>
- <updated>2012-05-05T03:42:51-04:00</updated>
+ <updated>2012-05-05T04:07:05-04:00</updated>
  <id>http://username.github.com</id>
  <author>
    <name>Lin Zhixiong</name>
@@ -13,11 +13,32 @@
 
  
  <entry>
+   <title>在ubuntu中安装zlib</title>
+   <link href="http://username.github.com/Notes/2012/05/05/ubuntuzlib"/>
+   <updated>2012-05-05T00:00:00-04:00</updated>
+   <id>http://username.github.com/Notes/2012/05/05/ubuntuzlib</id>
+   <content type="html">&lt;p&gt;在ubuntu 12.04中安装好rvm 和ruby，使用gem install rake 命令来安装rake，安装过程中发现 no such file to load &amp;#8211;zlib 错误。&lt;/p&gt;
+
+&lt;p&gt;解决的方法是安装zlib后重新安装ruby。&lt;/p&gt;
+
+&lt;p&gt;安装zlib：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rvm pkg install zlib&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;另外，无法通过apt-get install zlib来安装zlib包&lt;/p&gt;
+
+&lt;p&gt;重新安装ruby：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rvm remove 1.9.3 
+rvm install 1.9.3&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>Javascript function细碎</title>
    <link href="http://username.github.com/Javascript/2012/05/05/javascript-function"/>
    <updated>2012-05-05T00:00:00-04:00</updated>
    <id>http://username.github.com/Javascript/2012/05/05/javascript-function</id>
-   <content type="html">&lt;h4 id='id152'&gt;一切皆是对象&lt;/h4&gt;
+   <content type="html">&lt;h4 id='id180'&gt;一切皆是对象&lt;/h4&gt;
 
 &lt;p&gt;函数在诸如python以及ruby的动态语言当中被当作是一等公民，相比叫静态语言，在这些语言当中函数可以不依托在任何的类或者实例，即可定义和调用。在web前端交互面向对象语言javascript同样具有这样的语言能力，因此我们可以这样来定义和调用一个function:&lt;/p&gt;
 
@@ -40,7 +61,7 @@ function DrawMoney(count, callback){
 
 drawMoney(40612002,printLog); &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id153'&gt;灵活的调用方式&lt;/h4&gt;
+&lt;h4 id='id181'&gt;灵活的调用方式&lt;/h4&gt;
 
 &lt;p&gt;关于函数调用，静态语言当中我们或者是通过类或者是通过对象实例或者是通过委托，但无一不是类型确定的。如果是静态方法，那么只能通过类来调用，如果是实例方法那么只能由实例对象来调用。所用函数的上下文在编译时就已经确定了：&lt;/p&gt;
 

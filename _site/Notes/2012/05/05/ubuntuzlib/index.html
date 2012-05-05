@@ -3,8 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Tags</title>
-    
+    <title>在ubuntu中安装zlib</title>
+    <meta name="description" content="">
     <meta name="author" content="Lin Zhixiong">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -61,7 +61,7 @@
     
       
       	
-      	<li class="active"><a href="/tags.html" class="active">Tags</a></li>
+      	<li><a href="/tags.html">Tags</a></li>
       	
       
     
@@ -95,27 +95,73 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Tags </h1>
+  <h1>在ubuntu中安装zlib <small>Supporting tagline</small></h1>
 </div>
 
 <div class="row">
-  <div class="span12">
+  <div class="span8">
+    <p>在ubuntu 12.04中安装好rvm 和ruby，使用gem install rake 命令来安装rake，安装过程中发现 no such file to load &#8211;zlib 错误。</p>
+
+<p>解决的方法是安装zlib后重新安装ruby。</p>
+
+<p>安装zlib：</p>
+
+<pre><code>rvm pkg install zlib</code></pre>
+
+<p>另外，无法通过apt-get install zlib来安装zlib包</p>
+
+<p>重新安装ruby：</p>
+
+<pre><code>rvm remove 1.9.3 
+rvm install 1.9.3</code></pre>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/Javascript/2012/05/05/javascript-function" title="Javascript function细碎">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+    <hr>
     
 
-<ul class="tag_box inline">
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
     
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
   
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>05 May 2012</span></div>
+
+  
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+    
 
 
   
-     
-    	<li><a href="/tags.html#Hello world-ref">Hello world <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#clean code-ref">clean code <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#refactoring-ref">refactoring <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#Javascript-ref">Javascript <span>1</span></a></li>
      
     	<li><a href="/tags.html#zlib-ref">zlib <span>1</span></a></li>
      
@@ -127,151 +173,8 @@
 
 
 
-</ul>
-
-
- 
-  <h2 id="Hello world-ref">Hello world</h2>
-  <ul>
-      
+    </ul>
     
-
-
-  
-    
-      
-      	
-      	<li><a href="/2012/04/05/hello-world">hello world</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="clean code-ref">clean code</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/Refactor/2012/04/27/clean-code-notes">Clean code notes</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="refactoring-ref">refactoring</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/Refactor/2012/04/27/clean-code-notes">Clean code notes</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="Javascript-ref">Javascript</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/Javascript/2012/05/05/javascript-function">Javascript function细碎</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="zlib-ref">zlib</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/Notes/2012/05/05/ubuntuzlib">在ubuntu中安装zlib</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="ubuntu-ref">ubuntu</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/Notes/2012/05/05/ubuntuzlib">在ubuntu中安装zlib</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
- 
-  <h2 id="rvm-ref">rvm</h2>
-  <ul>
-      
-    
-
-
-  
-    
-      
-      	
-      	<li><a href="/Notes/2012/05/05/ubuntuzlib">在ubuntu中安装zlib</a></li>
-      	
-      
-    
-  
-
-
-
-  </ul>
-
-
   </div>
 </div>
 
