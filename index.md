@@ -11,7 +11,7 @@ tagline: Contiunous Learning
 #### Recently Posts
 <ul class="posts">
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo;<strong> <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></strong></li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo;<h3> <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3></li>
 
     {{ post.content }} {% endfor %}
 </ul>
