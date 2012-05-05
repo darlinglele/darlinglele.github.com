@@ -2,8 +2,8 @@
 layout: post
 title: "Javascript function细碎"
 description: ""
-category: 
-tags: []
+category: Javascript 
+tags: [Javascript]
 ---
 
 ####一切皆是对象

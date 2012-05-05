@@ -2,7 +2,7 @@
 layout: post
 title: "Clean code notes"
 description: "nihao"
-category: 
+category: Refactor 
 tags: [clean code, refactoring]
 ---
 **处理Try/Catch**

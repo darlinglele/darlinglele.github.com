@@ -4,7 +4,7 @@
  <title>Home</title>
  <link href="http://username.github.com/atom.xml" rel="self"/>
  <link href="http://username.github.com"/>
- <updated>2012-05-05T02:44:53-04:00</updated>
+ <updated>2012-05-05T03:42:51-04:00</updated>
  <id>http://username.github.com</id>
  <author>
    <name>Lin Zhixiong</name>
@@ -14,10 +14,10 @@
  
  <entry>
    <title>Javascript function细碎</title>
-   <link href="http://username.github.com/2012/05/05/javascript-function"/>
+   <link href="http://username.github.com/Javascript/2012/05/05/javascript-function"/>
    <updated>2012-05-05T00:00:00-04:00</updated>
-   <id>http://username.github.com/2012/05/05/javascript-function</id>
-   <content type="html">&lt;h4 id='id146'&gt;一切皆是对象&lt;/h4&gt;
+   <id>http://username.github.com/Javascript/2012/05/05/javascript-function</id>
+   <content type="html">&lt;h4 id='id152'&gt;一切皆是对象&lt;/h4&gt;
 
 &lt;p&gt;函数在诸如python以及ruby的动态语言当中被当作是一等公民，相比叫静态语言，在这些语言当中函数可以不依托在任何的类或者实例，即可定义和调用。在web前端交互面向对象语言javascript同样具有这样的语言能力，因此我们可以这样来定义和调用一个function:&lt;/p&gt;
 
@@ -40,7 +40,7 @@ function DrawMoney(count, callback){
 
 drawMoney(40612002,printLog); &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id147'&gt;灵活的调用方式&lt;/h4&gt;
+&lt;h4 id='id153'&gt;灵活的调用方式&lt;/h4&gt;
 
 &lt;p&gt;关于函数调用，静态语言当中我们或者是通过类或者是通过对象实例或者是通过委托，但无一不是类型确定的。如果是静态方法，那么只能通过类来调用，如果是实例方法那么只能由实例对象来调用。所用函数的上下文在编译时就已经确定了：&lt;/p&gt;
 
@@ -147,9 +147,9 @@ guy.say();&lt;/code&gt;&lt;/pre&gt;
  
  <entry>
    <title>Clean code notes</title>
-   <link href="http://username.github.com/2012/04/27/clean-code-notes"/>
+   <link href="http://username.github.com/Refactor/2012/04/27/clean-code-notes"/>
    <updated>2012-04-27T00:00:00-04:00</updated>
-   <id>http://username.github.com/2012/04/27/clean-code-notes</id>
+   <id>http://username.github.com/Refactor/2012/04/27/clean-code-notes</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;处理Try/Catch&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Try/Catch 代码块经常破坏了代码的结构，把正常错里和错误处理混为一谈。因此应当把错误处理单独处理，放在一个单独的方法里，并却这个方法仅仅做错误处理一件事情。在这样的方法里try应当是第一个单词，并且catch/finaly 后面也不该有其他的内容。&lt;/p&gt;
