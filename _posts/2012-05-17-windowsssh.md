@@ -10,6 +10,7 @@ tags: [ec2, Amazon, ssh, windows, proxy]
 
 First of all, we need a proper SSH client, here we use [PuTTY](http://en.wikipedia.org/wiki/PuTTY), you can download it [here](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). 
 And then you can follow the next steps to complete the configuration.
+####Use PuTTY as SSH Client
 #####Host name settings:
     Host: ec2-54-251-1-36.ap-southeast-1.compute.amazonaws.com
     Port: 50683
