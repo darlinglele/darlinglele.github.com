@@ -1,0 +1,14 @@
+Host singapore 
+HostName ec2-54-251-1-36.ap-southeast-1.compute.amazonaws.com
+User ubuntu
+IdentityFile ~/.ssh/mykey.pem
+Port 50683 
+CompressionLevel 6
+DynamicForward localhost:3128
+
+Host tokyo 
+HostName ec2-175-41-201-250.ap-northeast-1.compute.amazonaws.com
+User ubuntu
+IdentityFile ~/.ssh/tokyo.pem
+CompressionLevel 6
+DynamicForward localhost:3128

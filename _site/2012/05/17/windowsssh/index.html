@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>hello world</title>
+    <title>SSH as a proxy server in Windows</title>
     <meta name="description" content="">
     <meta name="author" content="Lin Zhixiong">
 
@@ -95,25 +95,66 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>hello world <small>Supporting tagline</small></h1>
+  <h1>SSH as a proxy server in Windows <small>Supporting tagline</small></h1>
 </div>
 
 <div class="row">
   <div class="span8">
-    <p>This is the first blog using markdown file!</p>
+    <p>First of all, we need a proper SSH client, here we use <a href='http://en.wikipedia.org/wiki/PuTTY'>PuTTY</a>, you can download it <a href='http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe'>here</a>. And then you can follow the next steps to complete the configuration.</p>
 
-<pre><code>What is markdown ?</code></pre>
+<h5 id='host_name_settings'>Host name settings:</h5>
 
-<p>The markdown is descripted on <a href='http://en.wikipedia.org/wiki/markdown'>wikipedia</a> as this.</p>
+<pre><code>Host: ec2-54-251-1-36.ap-southeast-1.compute.amazonaws.com
+Port: 50683
+Connection Type: SSH</code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/host.jpg' /></p>
+
+<h5 id='private_key_file_settings'>Private key file settings:</h5>
+
+<pre><code>The private key encode the ssh client and server, even if connects to a insecure network.</code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/keyfile.jpg' /></p>
+
+<h5 id='forwarding_port_settings'>Forwarding port settings:</h5>
+
+<pre><code>Port: 3128 use this port to forward the requests to ssh server.</code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/forwarding.jpg' /></p>
+
+<h5 id='proxy_settings'>Proxy settings</h5>
+
+<pre><code>This is an option if you are using proxy to connect internet.</code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/proxy.jpg' /></p>
+
+<pre><code>Then you can save the configuration and click open button to connect server. </code></pre>
+
+<h4 id='use_switchysharp_to_sharp_the_chrome'>Use SwitchySharp to sharp the chrome</h4>
+
+<p>Since we have successful forward the ssh port with localhost 3128 port, then we are going to config chrome to use this port as socket proxy, here we can get many convienent by install an amazing chrome extesion &#8211; SwitchyProxy, you can easily to install by hit <a href='https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm'>me</a></p>
+
+<h5 id='config_the_proxy_profiles'>Config the proxy profiles</h5>
+
+<pre><code>Socks host: localhost 
+Port: 3128 </code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/profiles.png' /></p>
+
+<h5 id='config_the_switch_rule'>Config the switch rule</h5>
+
+<pre><code>The easiest way is using rule list url from https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt </code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/rule.png' /></p>
     <hr>
     <div class="pagination">
       <ul>
       
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="prev"><a href="/Notes/2012/05/05/ubuntuzlib" title="在ubuntu中安装zlib">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/Refactor/2012/04/27/clean-code-notes" title="Clean code notes">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>
@@ -143,7 +184,7 @@
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>05 April 2012</span></div>
+    <div class="date"><span>17 May 2012</span></div>
 
   
     <h4>Tags</h4>
@@ -154,7 +195,15 @@
 
   
      
-    	<li><a href="/tags.html#Hello world-ref">Hello world <span>1</span></a></li>
+    	<li><a href="/tags.html#ec2-ref">ec2 <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#Amazon-ref">Amazon <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#ssh-ref">ssh <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#windows-ref">windows <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#proxy-ref">proxy <span>1</span></a></li>
     
   
 

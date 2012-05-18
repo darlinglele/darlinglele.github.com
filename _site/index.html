@@ -41,6 +41,14 @@
     
       
       	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+      	
       	<li><a href="/pages.html">Pages</a></li>
       	
       
@@ -60,20 +68,12 @@
   
     
       
+    
+  
+    
+      
       	
       	<li><a href="/tags.html">Tags</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/categories.html">Categories</a></li>
       	
       
     
@@ -109,6 +109,54 @@ Github : https://github.com/darlinglele </code></pre>
 <h4 id='recently_posts'>Recently Posts</h4>
 <ul class='posts'>
   
+    <li><span>17 May 2012</span> &raquo;<h3> <a href='/2012/05/17/windowsssh'>SSH as a proxy server in Windows</a></h3></li>
+
+    <p>First of all, we need a proper SSH client, here we use <a href='http://en.wikipedia.org/wiki/PuTTY'>PuTTY</a>, you can download it <a href='http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe'>here</a>. And then you can follow the next steps to complete the configuration.</p>
+
+<h5 id='host_name_settings'>Host name settings:</h5>
+
+<pre><code>Host: ec2-54-251-1-36.ap-southeast-1.compute.amazonaws.com
+Port: 50683
+Connection Type: SSH</code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/host.jpg' /></p>
+
+<h5 id='private_key_file_settings'>Private key file settings:</h5>
+
+<pre><code>The private key encode the ssh client and server, even if connects to a insecure network.</code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/keyfile.jpg' /></p>
+
+<h5 id='forwarding_port_settings'>Forwarding port settings:</h5>
+
+<pre><code>Port: 3128 use this port to forward the requests to ssh server.</code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/forwarding.jpg' /></p>
+
+<h5 id='proxy_settings'>Proxy settings</h5>
+
+<pre><code>This is an option if you are using proxy to connect internet.</code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/proxy.jpg' /></p>
+
+<pre><code>Then you can save the configuration and click open button to connect server. </code></pre>
+
+<h4 id='use_switchysharp_to_sharp_the_chrome'>Use SwitchySharp to sharp the chrome</h4>
+
+<p>Since we have successful forward the ssh port with localhost 3128 port, then we are going to config chrome to use this port as socket proxy, here we can get many convienent by install an amazing chrome extesion &#8211; SwitchyProxy, you can easily to install by hit <a href='https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm'>me</a></p>
+
+<h5 id='config_the_proxy_profiles'>Config the proxy profiles</h5>
+
+<pre><code>Socks host: localhost 
+Port: 3128 </code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/profiles.png' /></p>
+
+<h5 id='config_the_switch_rule'>Config the switch rule</h5>
+
+<pre><code>The easiest way is using rule list url from https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt </code></pre>
+
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/rule.png' /></p> 
     <li><span>05 May 2012</span> &raquo;<h3> <a href='/Notes/2012/05/05/ubuntuzlib'>在ubuntu中安装zlib</a></h3></li>
 
     <p>在ubuntu 12.04中安装好rvm 和ruby，使用gem install rake 命令来安装rake，安装过程中发现 no such file to load &#8211;zlib 错误。</p>
@@ -127,7 +175,7 @@ Github : https://github.com/darlinglele </code></pre>
 rvm install 1.9.3</code></pre> 
     <li><span>05 May 2012</span> &raquo;<h3> <a href='/Javascript/2012/05/05/javascript-function'>Javascript function细碎</a></h3></li>
 
-    <h4 id='id180'>一切皆是对象</h4>
+    <h4 id='id213'>一切皆是对象</h4>
 
 <p>函数在诸如python以及ruby的动态语言当中被当作是一等公民，相比叫静态语言，在这些语言当中函数可以不依托在任何的类或者实例，即可定义和调用。在web前端交互面向对象语言javascript同样具有这样的语言能力，因此我们可以这样来定义和调用一个function:</p>
 
@@ -150,7 +198,7 @@ function DrawMoney(count, callback){
 
 drawMoney(40612002,printLog); </code></pre>
 
-<h4 id='id181'>灵活的调用方式</h4>
+<h4 id='id214'>灵活的调用方式</h4>
 
 <p>关于函数调用，静态语言当中我们或者是通过类或者是通过对象实例或者是通过委托，但无一不是类型确定的。如果是静态方法，那么只能通过类来调用，如果是实例方法那么只能由实例对象来调用。所用函数的上下文在编译时就已经确定了：</p>
 
