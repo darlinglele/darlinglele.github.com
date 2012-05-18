@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Javascript function细碎"
+title: "About Javascript Function"
 description: ""
 category: Javascript 
-tags: [Javascript]
+tags: [Javascript, function, ruby, 函数式]
 ---
 
 ####一切皆是对象
