@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 一大只熊的Blog! 
+title: 一大只熊的胡思乱想 
 tagline: Contiunous Learning 
 ---
 #### About Me
