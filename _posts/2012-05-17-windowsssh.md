@@ -17,7 +17,7 @@ And then you can follow the next steps to complete the configuration.
 
 ![Host name and port setting](http://darlinglele.github.com/images/ssh/host.jpg)
 #####Private key file settings:
-    The private key encode the ssh client and server, even if connects to a insecure network.
+    The private key protect your information secure bettween ssh client and server, even if connected to a insecure network.
 ![Host name and port setting](http://darlinglele.github.com/images/ssh/keyfile.jpg)
 #####Forwarding port settings:
     Port: 3128 use this port to forward the requests to ssh server.
