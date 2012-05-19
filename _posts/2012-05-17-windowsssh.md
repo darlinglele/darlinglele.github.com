@@ -22,6 +22,10 @@ And then you can follow the next steps to complete the configuration.
 ![Host name and port setting](http://darlinglele.github.com/images/ssh/keyfile.jpg)
 #####Forwarding port settings:
     Port: 3128 use this port to forward the requests to ssh server.
+
+######Don't forget to add this port by click 'Add' button
+
+
 ![Host name and port setting](http://darlinglele.github.com/images/ssh/forwarding.jpg)
 #####Proxy settings
     This is an option if you are using proxy to connect internet.
@@ -31,7 +35,7 @@ And then you can follow the next steps to complete the configuration.
 ####Use SwitchySharp to sharp the chrome
 
 
-Since we have successful forward the ssh port with localhost 3128 port, then we are going to config chrome to use this port as socket proxy, here we can get many convienent by install an amazing chrome extesion -- SwitchyProxy, you can easily to install by hit [me](https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm)
+Since we already successful setting up the forward port in 3128, then we are going to config chrome to use this port as socket proxy, here we can get many convienent by install an amazing chrome extesion -- SwitchyProxy, you can easily to install by hit [me](https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm)
 
 #####Config the proxy profiles
     Socks host: localhost 
