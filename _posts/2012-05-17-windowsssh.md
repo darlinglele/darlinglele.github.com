@@ -12,7 +12,7 @@ First of all, we need a proper SSH client, here we use [PuTTY](http://en.wikiped
 And then you can follow the next steps to complete the configuration.
 ####Use PuTTY as SSH Client
 #####Host name settings:
-    Host: ec2-54-251-1-36.ap-southeast-1.compute.amazonaws.com
+    Host: 54.251.58.63 
     Port: 50683
     Connection Type: SSH
 
