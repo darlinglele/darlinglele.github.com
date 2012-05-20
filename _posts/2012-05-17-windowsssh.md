@@ -32,6 +32,8 @@ And then you can follow the next steps to complete the configuration.
 ![Host name and port setting](http://darlinglele.github.com/images/ssh/proxy.jpg)
 
     Then you can save the configuration and click open button to connect server. 
+######Enter the ssh user
+    Login as : username 
 ####Use SwitchySharp to sharp the chrome
 
 
@@ -40,16 +42,15 @@ Since we already successful setting up the forward port in 3128, then we are goi
 #####Config the proxy profiles
     Socks host: localhost 
     Port: 3128 
-    
+    notes: The locahost 3128 port will be the tunnel that forwarding the requests from chrome browser.
+
 ![Host name and port setting](http://darlinglele.github.com/images/ssh/profiles.png)
+
 #####Config the switch rule
     The easiest way is using rule list url from https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt 
+    When the url you are requesting is in the list, the request will forward to port 3128 using ssh protocal.  
 ![Host name and port setting](http://darlinglele.github.com/images/ssh/rule.png)
 
 
-
-
-
-
-
+######The end.
 {% include JB/setup %}
