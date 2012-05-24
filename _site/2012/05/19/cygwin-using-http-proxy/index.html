@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>hello world</title>
+    <title>Using http proxy in cygwin</title>
     <meta name="description" content="">
     <meta name="author" content="Lin Zhixiong">
 
@@ -95,25 +95,29 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>hello world <small>Supporting tagline</small></h1>
+  <h1>Using http proxy in cygwin <small>Supporting tagline</small></h1>
 </div>
 
 <div class="row">
   <div class="span8">
-    <p>This is the first blog using markdown file!</p>
+    <p>As a windows user, I prefer to use cygwin for the benifit of powerful linux tools . Cygwin provides a collection of linux tools, and brings linux look and feel for windows.</p>
 
-<pre><code>What is markdown ?</code></pre>
+<p>In some organization secutity policy, they use http proxy to connect internet. For many applications(eg.IE), it&#8217;s necessary to config the http proxy for internet accessable. For cygwin there are many tools need connect to internet, so the first thing for me is to config http proxy for cygwin. It&#8217;s straightforward and easy, just one line:</p>
 
-<p>The markdown is descripted on <a href='http://en.wikipedia.org/wiki/markdown'>wikipedia</a> as this.</p>
+<pre><code>export http_proxy=&quot;http://username:password@proxyserver:port&quot;
+or
+export http_proxy=&quot;http://proxyserver:port&quot;</code></pre>
+
+<p>For write once run every times, it is a good idea to save the command into .bash_profile file.</p>
     <hr>
     <div class="pagination">
       <ul>
       
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="prev"><a href="/2012/05/17/windowsssh" title="SSH as a proxy server in Windows">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/Refactor/2012/04/27/clean-code-notes" title="Clean code notes">Next &rarr;</a></li>
+        <li class="next"><a href="/2012/05/24/cannot-load-such-file---openssl-loaderror" title="Cannot load such file   openssl (loadError)">Next &rarr;</a></li>
       
       </ul>
     </div>
@@ -143,7 +147,7 @@
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>05 April 2012</span></div>
+    <div class="date"><span>19 May 2012</span></div>
 
   
     <h4>Tags</h4>
@@ -154,7 +158,9 @@
 
   
      
-    	<li><a href="/tags.html#Hello world-ref">Hello world <span>1</span></a></li>
+    	<li><a href="/tags.html#cygwin-ref">cygwin <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#http proxy-ref">http proxy <span>1</span></a></li>
     
   
 

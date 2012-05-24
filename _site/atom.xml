@@ -4,7 +4,7 @@
  <title>Home</title>
  <link href="http://username.github.com/atom.xml" rel="self"/>
  <link href="http://username.github.com"/>
- <updated>2012-05-18T23:17:47+08:00</updated>
+ <updated>2012-05-24T02:40:11+00:00</updated>
  <id>http://username.github.com</id>
  <author>
    <name>Lin Zhixiong</name>
@@ -13,9 +13,35 @@
 
  
  <entry>
+   <title>Cannot load such file   openssl (loadError)</title>
+   <link href="http://username.github.com/2012/05/24/cannot-load-such-file---openssl-loaderror"/>
+   <updated>2012-05-24T00:00:00+00:00</updated>
+   <id>http://username.github.com/2012/05/24/cannot-load-such-file---openssl-loaderror</id>
+   <content type="html">&lt;pre&gt;&lt;code&gt;rvm remove 1.9.x
+sudo apt-get install libssl-dev
+rvm install 1.9.x&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Using http proxy in cygwin</title>
+   <link href="http://username.github.com/2012/05/19/cygwin-using-http-proxy"/>
+   <updated>2012-05-19T00:00:00+00:00</updated>
+   <id>http://username.github.com/2012/05/19/cygwin-using-http-proxy</id>
+   <content type="html">&lt;p&gt;As a windows user, I prefer to use cygwin for the benifit of powerful linux tools . Cygwin provides a collection of linux tools, and brings linux look and feel for windows.&lt;/p&gt;
+
+&lt;p&gt;In some organization secutity policy, they use http proxy to connect internet. For many applications(eg.IE), it&amp;#8217;s necessary to config the http proxy for internet accessable. For cygwin there are many tools need connect to internet, so the first thing for me is to config http proxy for cygwin. It&amp;#8217;s straightforward and easy, just one line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export http_proxy=&amp;quot;http://username:password@proxyserver:port&amp;quot;
+or
+export http_proxy=&amp;quot;http://proxyserver:port&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For write once run every times, it is a good idea to save the command into .bash_profile file.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>SSH as a proxy server in Windows</title>
    <link href="http://username.github.com/2012/05/17/windowsssh"/>
-   <updated>2012-05-17T00:00:00+08:00</updated>
+   <updated>2012-05-17T00:00:00+00:00</updated>
    <id>http://username.github.com/2012/05/17/windowsssh</id>
    <content type="html">&lt;p&gt;First of all, we need a proper SSH client, here we use &lt;a href='http://en.wikipedia.org/wiki/PuTTY'&gt;PuTTY&lt;/a&gt;, you can download it &lt;a href='http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe'&gt;here&lt;/a&gt;. And then you can follow the next steps to complete the configuration.&lt;/p&gt;
 
@@ -23,7 +49,7 @@
 
 &lt;h5 id='host_name_settings'&gt;Host name settings:&lt;/h5&gt;
 
-&lt;pre&gt;&lt;code&gt;Host: ec2-54-251-1-36.ap-southeast-1.compute.amazonaws.com
+&lt;pre&gt;&lt;code&gt;Host: 54.251.58.63 
 Port: 50683
 Connection Type: SSH&lt;/code&gt;&lt;/pre&gt;
 
@@ -39,6 +65,8 @@ Connection Type: SSH&lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;Port: 3128 use this port to forward the requests to ssh server.&lt;/code&gt;&lt;/pre&gt;
 
+&lt;h6 id='dont_forget_to_add_this_port_by_click_add_button'&gt;Don&amp;#8217;t forget to add this port by click &amp;#8216;Add&amp;#8217; button&lt;/h6&gt;
+
 &lt;p&gt;&lt;img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/forwarding.jpg' /&gt;&lt;/p&gt;
 
 &lt;h5 id='proxy_settings'&gt;Proxy settings&lt;/h5&gt;
@@ -49,28 +77,36 @@ Connection Type: SSH&lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;Then you can save the configuration and click open button to connect server. &lt;/code&gt;&lt;/pre&gt;
 
+&lt;h6 id='enter_the_ssh_user'&gt;Enter the ssh user&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code&gt;Login as : username &lt;/code&gt;&lt;/pre&gt;
+
 &lt;h4 id='use_switchysharp_to_sharp_the_chrome'&gt;Use SwitchySharp to sharp the chrome&lt;/h4&gt;
 
-&lt;p&gt;Since we have successful forward the ssh port with localhost 3128 port, then we are going to config chrome to use this port as socket proxy, here we can get many convienent by install an amazing chrome extesion &amp;#8211; SwitchyProxy, you can easily to install by hit &lt;a href='https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm'&gt;me&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since we already successful setting up the forward port in 3128, then we are going to config chrome to use this port as socket proxy, here we can get many convienent by install an amazing chrome extesion &amp;#8211; SwitchyProxy, you can easily to install by hit &lt;a href='https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm'&gt;me&lt;/a&gt;&lt;/p&gt;
 
 &lt;h5 id='config_the_proxy_profiles'&gt;Config the proxy profiles&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;Socks host: localhost 
-Port: 3128 &lt;/code&gt;&lt;/pre&gt;
+Port: 3128 
+notes: The locahost 3128 port will be the tunnel that forwarding the requests from chrome browser.&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/profiles.png' /&gt;&lt;/p&gt;
 
 &lt;h5 id='config_the_switch_rule'&gt;Config the switch rule&lt;/h5&gt;
 
-&lt;pre&gt;&lt;code&gt;The easiest way is using rule list url from https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;The easiest way is using rule list url from https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt 
+When the url you are requesting is in the list, the request will forward to port 3128 using ssh protocal.  &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/rule.png' /&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/rule.png' /&gt;&lt;/p&gt;
+
+&lt;h6 id='the_end'&gt;The end.&lt;/h6&gt;</content>
  </entry>
  
  <entry>
    <title>在ubuntu中安装zlib</title>
    <link href="http://username.github.com/Notes/2012/05/05/ubuntuzlib"/>
-   <updated>2012-05-05T00:00:00+08:00</updated>
+   <updated>2012-05-05T00:00:00+00:00</updated>
    <id>http://username.github.com/Notes/2012/05/05/ubuntuzlib</id>
    <content type="html">&lt;p&gt;在ubuntu 12.04中安装好rvm 和ruby，使用gem install rake 命令来安装rake，安装过程中发现 no such file to load &amp;#8211;zlib 错误。&lt;/p&gt;
 
@@ -91,9 +127,9 @@ rvm install 1.9.3&lt;/code&gt;&lt;/pre&gt;</content>
  <entry>
    <title>About Javascript Function</title>
    <link href="http://username.github.com/Javascript/2012/05/05/javascript-function"/>
-   <updated>2012-05-05T00:00:00+08:00</updated>
+   <updated>2012-05-05T00:00:00+00:00</updated>
    <id>http://username.github.com/Javascript/2012/05/05/javascript-function</id>
-   <content type="html">&lt;h4 id='id225'&gt;一切皆是对象&lt;/h4&gt;
+   <content type="html">&lt;h4 id='id13'&gt;一切皆是对象&lt;/h4&gt;
 
 &lt;p&gt;函数在诸如python以及ruby的动态语言当中被当作是一等公民，相比叫静态语言，在这些语言当中函数可以不依托在任何的类或者实例，即可定义和调用。在web前端交互面向对象语言javascript同样具有这样的语言能力，因此我们可以这样来定义和调用一个function:&lt;/p&gt;
 
@@ -116,7 +152,7 @@ function DrawMoney(count, callback){
 
 drawMoney(40612002,printLog); &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id226'&gt;灵活的调用方式&lt;/h4&gt;
+&lt;h4 id='id14'&gt;灵活的调用方式&lt;/h4&gt;
 
 &lt;p&gt;关于函数调用，静态语言当中我们或者是通过类或者是通过对象实例或者是通过委托，但无一不是类型确定的。如果是静态方法，那么只能通过类来调用，如果是实例方法那么只能由实例对象来调用。所用函数的上下文在编译时就已经确定了：&lt;/p&gt;
 
@@ -224,7 +260,7 @@ guy.say();&lt;/code&gt;&lt;/pre&gt;
  <entry>
    <title>Clean code notes</title>
    <link href="http://username.github.com/Refactor/2012/04/27/clean-code-notes"/>
-   <updated>2012-04-27T00:00:00+08:00</updated>
+   <updated>2012-04-27T00:00:00+00:00</updated>
    <id>http://username.github.com/Refactor/2012/04/27/clean-code-notes</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;处理Try/Catch&lt;/strong&gt;&lt;/p&gt;
 
@@ -256,7 +292,7 @@ public void deletePage(){
  <entry>
    <title>hello world</title>
    <link href="http://username.github.com/2012/04/05/hello-world"/>
-   <updated>2012-04-05T00:00:00+08:00</updated>
+   <updated>2012-04-05T00:00:00+00:00</updated>
    <id>http://username.github.com/2012/04/05/hello-world</id>
    <content type="html">&lt;p&gt;This is the first blog using markdown file!&lt;/p&gt;
 

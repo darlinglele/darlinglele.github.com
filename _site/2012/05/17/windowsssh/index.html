@@ -40,29 +40,9 @@
   
     
       
-      	
-      	<li><a href="/categories.html">Categories</a></li>
-      	
-      
     
   
     
-      
-      	
-      	<li><a href="/pages.html">Pages</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/archive.html">Archive</a></li>
-      	
       
     
   
@@ -79,6 +59,26 @@
     
   
     
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
       
     
   
@@ -106,7 +106,7 @@
 
 <h5 id='host_name_settings'>Host name settings:</h5>
 
-<pre><code>Host: ec2-54-251-1-36.ap-southeast-1.compute.amazonaws.com
+<pre><code>Host: 54.251.58.63 
 Port: 50683
 Connection Type: SSH</code></pre>
 
@@ -122,6 +122,8 @@ Connection Type: SSH</code></pre>
 
 <pre><code>Port: 3128 use this port to forward the requests to ssh server.</code></pre>
 
+<h6 id='dont_forget_to_add_this_port_by_click_add_button'>Don&#8217;t forget to add this port by click &#8216;Add&#8217; button</h6>
+
 <p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/forwarding.jpg' /></p>
 
 <h5 id='proxy_settings'>Proxy settings</h5>
@@ -132,22 +134,30 @@ Connection Type: SSH</code></pre>
 
 <pre><code>Then you can save the configuration and click open button to connect server. </code></pre>
 
+<h6 id='enter_the_ssh_user'>Enter the ssh user</h6>
+
+<pre><code>Login as : username </code></pre>
+
 <h4 id='use_switchysharp_to_sharp_the_chrome'>Use SwitchySharp to sharp the chrome</h4>
 
-<p>Since we have successful forward the ssh port with localhost 3128 port, then we are going to config chrome to use this port as socket proxy, here we can get many convienent by install an amazing chrome extesion &#8211; SwitchyProxy, you can easily to install by hit <a href='https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm'>me</a></p>
+<p>Since we already successful setting up the forward port in 3128, then we are going to config chrome to use this port as socket proxy, here we can get many convienent by install an amazing chrome extesion &#8211; SwitchyProxy, you can easily to install by hit <a href='https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm'>me</a></p>
 
 <h5 id='config_the_proxy_profiles'>Config the proxy profiles</h5>
 
 <pre><code>Socks host: localhost 
-Port: 3128 </code></pre>
+Port: 3128 
+notes: The locahost 3128 port will be the tunnel that forwarding the requests from chrome browser.</code></pre>
 
 <p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/profiles.png' /></p>
 
 <h5 id='config_the_switch_rule'>Config the switch rule</h5>
 
-<pre><code>The easiest way is using rule list url from https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt </code></pre>
+<pre><code>The easiest way is using rule list url from https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt 
+When the url you are requesting is in the list, the request will forward to port 3128 using ssh protocal.  </code></pre>
 
 <p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/rule.png' /></p>
+
+<h6 id='the_end'>The end.</h6>
     <hr>
     <div class="pagination">
       <ul>
@@ -156,7 +166,7 @@ Port: 3128 </code></pre>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next disabled"><a>Next &rarr;</a>
+        <li class="next"><a href="/2012/05/19/cygwin-using-http-proxy" title="Using http proxy in cygwin">Next &rarr;</a></li>
       
       </ul>
     </div>

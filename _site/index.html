@@ -40,29 +40,9 @@
   
     
       
-      	
-      	<li><a href="/categories.html">Categories</a></li>
-      	
-      
     
   
     
-      
-      	
-      	<li><a href="/pages.html">Pages</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/archive.html">Archive</a></li>
-      	
       
     
   
@@ -79,6 +59,26 @@
     
   
     
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
       
     
   
@@ -109,6 +109,22 @@ Github : https://github.com/darlinglele </code></pre>
 <h4 id='recently_posts'>Recently Posts</h4>
 <ul class='posts'>
   
+    <li><span>24 May 2012</span> &raquo;<h3> <a href='/2012/05/24/cannot-load-such-file---openssl-loaderror'>Cannot load such file   openssl (loadError)</a></h3></li>
+
+    <pre><code>rvm remove 1.9.x
+sudo apt-get install libssl-dev
+rvm install 1.9.x</code></pre> 
+    <li><span>19 May 2012</span> &raquo;<h3> <a href='/2012/05/19/cygwin-using-http-proxy'>Using http proxy in cygwin</a></h3></li>
+
+    <p>As a windows user, I prefer to use cygwin for the benifit of powerful linux tools . Cygwin provides a collection of linux tools, and brings linux look and feel for windows.</p>
+
+<p>In some organization secutity policy, they use http proxy to connect internet. For many applications(eg.IE), it&#8217;s necessary to config the http proxy for internet accessable. For cygwin there are many tools need connect to internet, so the first thing for me is to config http proxy for cygwin. It&#8217;s straightforward and easy, just one line:</p>
+
+<pre><code>export http_proxy=&quot;http://username:password@proxyserver:port&quot;
+or
+export http_proxy=&quot;http://proxyserver:port&quot;</code></pre>
+
+<p>For write once run every times, it is a good idea to save the command into .bash_profile file.</p> 
     <li><span>17 May 2012</span> &raquo;<h3> <a href='/2012/05/17/windowsssh'>SSH as a proxy server in Windows</a></h3></li>
 
     <p>First of all, we need a proper SSH client, here we use <a href='http://en.wikipedia.org/wiki/PuTTY'>PuTTY</a>, you can download it <a href='http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe'>here</a>. And then you can follow the next steps to complete the configuration.</p>
@@ -117,7 +133,7 @@ Github : https://github.com/darlinglele </code></pre>
 
 <h5 id='host_name_settings'>Host name settings:</h5>
 
-<pre><code>Host: ec2-54-251-1-36.ap-southeast-1.compute.amazonaws.com
+<pre><code>Host: 54.251.58.63 
 Port: 50683
 Connection Type: SSH</code></pre>
 
@@ -133,6 +149,8 @@ Connection Type: SSH</code></pre>
 
 <pre><code>Port: 3128 use this port to forward the requests to ssh server.</code></pre>
 
+<h6 id='dont_forget_to_add_this_port_by_click_add_button'>Don&#8217;t forget to add this port by click &#8216;Add&#8217; button</h6>
+
 <p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/forwarding.jpg' /></p>
 
 <h5 id='proxy_settings'>Proxy settings</h5>
@@ -143,22 +161,30 @@ Connection Type: SSH</code></pre>
 
 <pre><code>Then you can save the configuration and click open button to connect server. </code></pre>
 
+<h6 id='enter_the_ssh_user'>Enter the ssh user</h6>
+
+<pre><code>Login as : username </code></pre>
+
 <h4 id='use_switchysharp_to_sharp_the_chrome'>Use SwitchySharp to sharp the chrome</h4>
 
-<p>Since we have successful forward the ssh port with localhost 3128 port, then we are going to config chrome to use this port as socket proxy, here we can get many convienent by install an amazing chrome extesion &#8211; SwitchyProxy, you can easily to install by hit <a href='https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm'>me</a></p>
+<p>Since we already successful setting up the forward port in 3128, then we are going to config chrome to use this port as socket proxy, here we can get many convienent by install an amazing chrome extesion &#8211; SwitchyProxy, you can easily to install by hit <a href='https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm'>me</a></p>
 
 <h5 id='config_the_proxy_profiles'>Config the proxy profiles</h5>
 
 <pre><code>Socks host: localhost 
-Port: 3128 </code></pre>
+Port: 3128 
+notes: The locahost 3128 port will be the tunnel that forwarding the requests from chrome browser.</code></pre>
 
 <p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/profiles.png' /></p>
 
 <h5 id='config_the_switch_rule'>Config the switch rule</h5>
 
-<pre><code>The easiest way is using rule list url from https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt </code></pre>
+<pre><code>The easiest way is using rule list url from https://autoproxy-gfwlist.googlecode.com/svn/trunk/gfwlist.txt 
+When the url you are requesting is in the list, the request will forward to port 3128 using ssh protocal.  </code></pre>
 
-<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/rule.png' /></p> 
+<p><img alt='Host name and port setting' src='http://darlinglele.github.com/images/ssh/rule.png' /></p>
+
+<h6 id='the_end'>The end.</h6> 
     <li><span>05 May 2012</span> &raquo;<h3> <a href='/Notes/2012/05/05/ubuntuzlib'>在ubuntu中安装zlib</a></h3></li>
 
     <p>在ubuntu 12.04中安装好rvm 和ruby，使用gem install rake 命令来安装rake，安装过程中发现 no such file to load &#8211;zlib 错误。</p>
@@ -177,7 +203,7 @@ Port: 3128 </code></pre>
 rvm install 1.9.3</code></pre> 
     <li><span>05 May 2012</span> &raquo;<h3> <a href='/Javascript/2012/05/05/javascript-function'>About Javascript Function</a></h3></li>
 
-    <h4 id='id225'>一切皆是对象</h4>
+    <h4 id='id13'>一切皆是对象</h4>
 
 <p>函数在诸如python以及ruby的动态语言当中被当作是一等公民，相比叫静态语言，在这些语言当中函数可以不依托在任何的类或者实例，即可定义和调用。在web前端交互面向对象语言javascript同样具有这样的语言能力，因此我们可以这样来定义和调用一个function:</p>
 
@@ -200,7 +226,7 @@ function DrawMoney(count, callback){
 
 drawMoney(40612002,printLog); </code></pre>
 
-<h4 id='id226'>灵活的调用方式</h4>
+<h4 id='id14'>灵活的调用方式</h4>
 
 <p>关于函数调用，静态语言当中我们或者是通过类或者是通过对象实例或者是通过委托，但无一不是类型确定的。如果是静态方法，那么只能通过类来调用，如果是实例方法那么只能由实例对象来调用。所用函数的上下文在编译时就已经确定了：</p>
 
