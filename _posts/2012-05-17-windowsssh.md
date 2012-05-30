@@ -33,7 +33,7 @@ And then you can follow the next steps to complete the configuration.
 
     Then you can save the configuration and click open button to connect server. 
 ######Enter the ssh user
-    Login as : username 
+    Login as : ubuntu 
 ####Use SwitchySharp to sharp the chrome
 
 
