@@ -3,9 +3,12 @@ layout: post
 title: "Linux commands"
 description: "notes about linux commands"
 category: 
-tags: [chmod, nohup, command, ls, sed, awk]
+tags: [chmod, rename, nohup, command, ls, sed, awk]
 ---
 Here attached some commands had been used frequently:
+
+    rename '/y/A-Z/a-z/' * 
+Rename all to lowercase
 
     fuser -n tcp 8080
 Find the processes using 8080 port
