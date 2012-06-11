@@ -7,6 +7,12 @@ tags: [chmod, nohup, command, ls, sed, awk]
 ---
 Here attached some commands had been used frequently:
 
+    fuser -n tcp 8080
+Find the processes using 8080 port
+
+    update-alternatives --config java
+Configure java different versions 
+
     ls ./* -D 
 Show all directory
 
