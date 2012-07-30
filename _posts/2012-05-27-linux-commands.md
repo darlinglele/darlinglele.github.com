@@ -7,6 +7,9 @@ tags: [chmod, rename, nohup, command, ls, sed, awk]
 ---
 Here attached some commands had been used frequently:
 
+    curl darlinglele.github.com|sed's/[^a-zA-Z]/ /g' | tr 'A-Z ' 'a-z\n'|grep '[a-z]'|sort -u
+Get the words contained in a page
+
     rename '/y/A-Z/a-z/' * 
 Rename all to lowercase
 
