@@ -40,29 +40,9 @@
   
     
       
-      	
-      	<li><a href="/categories.html">Categories</a></li>
-      	
-      
     
   
     
-      
-      	
-      	<li><a href="/pages.html">Pages</a></li>
-      	
-      
-    
-  
-    
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/archive.html">Archive</a></li>
-      	
       
     
   
@@ -79,6 +59,26 @@
     
   
     
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
       
     
   
@@ -102,13 +102,48 @@
   <div class="span8">
     <p>Here attached some commands had been used frequently:</p>
 
+<pre><code>curl darlinglele.github.com|sed&#39;s/[^a-zA-Z]/ /g&#39; | tr &#39;A-Z &#39; &#39;a-z\n&#39;|grep &#39;[a-z]&#39;|sort -u</code></pre>
+
+<p>Get the words contained in a page</p>
+
+<pre><code>rename &#39;/y/A-Z/a-z/&#39; * </code></pre>
+
+<p>Rename all to lowercase</p>
+
+<pre><code>fuser -n tcp 8080</code></pre>
+
+<p>Find the processes using 8080 port</p>
+
+<pre><code>update-alternatives --config java</code></pre>
+
+<p>Configure java different versions</p>
+
+<pre><code>ls ./* -D </code></pre>
+
+<p>Show all directory</p>
+
 <pre><code>chmod 777 /var/chef/ -R</code></pre>
 
-<p>grant full right of /var/chef and subfolder to any user.</p>
+<p>Grant full right of /var/chef and subfolder to any user.</p>
 
-<pre><code>nohub command &amp;</code></pre>
+<pre><code>nohub command &amp;
+eg: nohub jekyll --server &amp;</code></pre>
 
-<p>execute command in a new proccess</p>
+<p>Run command in new precess</p>
+
+<pre><code>Ctrl+z 
+bg %PID</code></pre>
+
+<p>Stop and run current process backgroup, the process still hook to the terminal.</p>
+
+<pre><code>sed [option] command files
+eg: sed -i &quot;s/zhixiong/Jason/g&quot;  `grep zhixiong -rl /c/sql/`</code></pre>
+
+<p>Replace all &#8220;zhixiong&#8221; with &#8220;Jason&#8221; in files return by grep command</p>
+
+<pre><code>ls | awk &#39;{printf(&quot;%s &quot;,$1)}&#39;</code></pre>
+
+<p>Valuable to print with format</p>
     <hr>
     <div class="pagination">
       <ul>
@@ -117,7 +152,7 @@
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next disabled"><a>Next &rarr;</a>
+        <li class="next"><a href="/2012/08/14/git-commands" title="Git commands">Next &rarr;</a></li>
       
       </ul>
     </div>
@@ -160,9 +195,17 @@
      
     	<li><a href="/tags.html#chmod-ref">chmod <span>1</span></a></li>
      
+    	<li><a href="/tags.html#rename-ref">rename <span>1</span></a></li>
+     
     	<li><a href="/tags.html#nohup-ref">nohup <span>1</span></a></li>
      
     	<li><a href="/tags.html#command-ref">command <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#ls-ref">ls <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#sed-ref">sed <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#awk-ref">awk <span>1</span></a></li>
     
   
 

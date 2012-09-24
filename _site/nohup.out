@@ -75,3 +75,6 @@ http://localhost:4000/ -> /assets/themes/twitter/css/style.css?body=1
 [2012-05-27 22:30:26] ERROR `/favicon.ico' not found.
 localhost - - [27/May/2012:22:30:26 CST] "GET /favicon.ico HTTP/1.1" 404 281
 - -> /favicon.ico
+/var/lib/gems/1.9.1/gems/jekyll-0.11.2/bin/jekyll:137:in `<top (required)>': ambiguous option: -server (OptionParser::AmbiguousOption)
+	from /usr/local/bin/jekyll:19:in `load'
+	from /usr/local/bin/jekyll:19:in `<main>'

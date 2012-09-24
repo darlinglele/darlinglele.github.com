@@ -4,7 +4,7 @@
  <title>Home</title>
  <link href="http://username.github.com/atom.xml" rel="self"/>
  <link href="http://username.github.com"/>
- <updated>2012-05-27T22:30:27+08:00</updated>
+ <updated>2012-09-24T03:28:50+00:00</updated>
  <id>http://username.github.com</id>
  <author>
    <name>Lin Zhixiong</name>
@@ -13,25 +13,97 @@
 
  
  <entry>
+   <title>任何做好沟通</title>
+   <link href="http://username.github.com/2012/09/24/"/>
+   <updated>2012-09-24T00:00:00+00:00</updated>
+   <id>http://username.github.com/2012/09/</id>
+   <content type="html">&lt;p&gt;沟通地形式有很多，会议、email、 电话、 即时聊天等等， 要figure out出那种形式对自己的团队最有效， 确实不容易。 于是我们经常怀疑所使用地形式是否正确。 但是问题真的仅仅是形式吗？ 是不是应该关注下人以及其他的因素？&lt;/p&gt;
+
+&lt;p&gt;“缺乏信心”： 沟通者往往缺少足够的自信来发表自己的见解。 似乎这是团队成员个体的心理问题， 但问题并非如此简单，实际上它暴露了组织中沟通环境的问题。在 一个“不安全”的沟通环境中，沟通者发表见解之前往往思前想后，有许多的顾虑，从而散失了一个好的idea被提出来的机会。这些顾虑可能涉及个人和其他人的利益， 无论如果它都不益的沟通的进行。 这些顾虑的很重要原因是：价值观冲突。一个组织中很容易形成以领导者的价值观为核心的价值观念， 使得员工盲目的崇拜和高度的依赖，从而影响了个体价值体系的完善和独立性。最终人言我言，缺乏思考。 我暂且称之为价值观“专制” 或者价值观“骚扰”。 价值观骚扰带来的影响很大，就像心里缺少一把杆秤，对自己idea的价值的判断力失去信心。 高明的领导者应该引导正确的价值观并鼓励价值观多样性和独立性。这样才能从不同的角度看待问题、发现问题， 真正做到人尽其才。 领导者浓重的价值观影响是否有利于团队的生产率， 确实值得商榷。&lt;/p&gt;
+
+&lt;p&gt;“不安全” 因素除了组织中价值观“专制”导致缺乏信心之外， 组织对待“问题”的方式也会影响沟通的有效性。 “问题”是沟通的开始， 那什么是沟通的结束？以及中间是什么？&lt;/p&gt;
+
+&lt;p&gt;首先要说， 问题和人相关。 问题中往往涉及不同人。例如问题一： 一次build的时间超过10分钟， 影响开发效率。这里至少有三个人会被invove 进来， 发现问题的人， 制造问题的人， 和解决问题的人。 通常我们会认为谁最应该对这个问题负责任呢？大多人的答案是： 谁导致问题谁负责呗！ 似乎就是这么简单。但是我们需要特别认真正视问题的定义，问题定义作为在整个反馈流程的开始， 将直接影响解决问题的方式。我认为上面这个问题的答案是“所有人”，是整个团队。我并不是想要为自己逃避责任， 而是希望能真正认清什么是责任。如果有人需要对一个问题负全部的责任， 那么是否就可以对其他部分不负责责任呢？ 是否不应该对其他部分的问题域视而不见呢？ 如果你始终记住团队是一个的整体，暂且不说集体荣誉感之类的话，光是想要团队紧密的合作， 我想谁都不能对团队问题视而不见。&lt;/p&gt;
+
+&lt;p&gt;因此， 所有参与的人员都需要承担全部责任，发现问题不能代表自己的荣誉， 导致问题也不能当作是个人的过错， 也不一定是谁导致问题，谁去修改问题。 乍一看，这不是告诉每个人反正出问题也是团队？这似乎是在“纵容犯错”，滋生害群之马。但从更深层次看，提倡对所有整个团队承担ownership有利于提高团队内部的认同感、团队协作，增强凝聚力。 至于害群之马， 我想我们在面试的时候就应该把这种拒之门外了。能力不足可以帮助他提升，但是态度不行那直接就可以走人了！&lt;/p&gt;
+
+&lt;p&gt;对于解决问题的方式， 谁制造问题谁解决似乎很公平，但现实中却是不合理的也不公平。问题的产生除了个人的工作能力之外，还有两个非常重要的因素： 时间和Scope。在同等时间内，scope越大，那么质量就越可能得不到保证，反之依然。慢工才能出细活，鱼于熊掌不可兼得焉！基于这样的原因， 组织中就会存在难易不一的任务分配。在同等时间下， 有些人的任务多，有些人的任务少出现问题的可能性也是不一样的！ 所以在这种一开始就不公平的情况下，如果简单粗暴的谁发现谁治理或者谁制造谁解决是极不公平的，也不利于团队合作。 要提倡团队紧密合作和团队精神，在这些问题如果没有公平正确的看待，就只是空喊口号瞎扯淡了。&lt;/p&gt;
+
+&lt;p&gt;解决问题首先找到问题源头固然是关键，但分析问题的原因以及如果杜绝则更加重要。无论谁产生这个都不仅是个人的问题，而是影响整个团队的问题，都值得团队去分析和反省。就像人生病时有必要做一个全面的检查一样， 切不可头痛医头，脚痛医脚。 团队中任何人出现了问题，都是团队所有人应该共同关注和警惕。 如果把问题孤立起来，看做是局部的影响，从而失去了全面检视的机会，掩盖了全局当中存在的问题，使得许多类似的问题潜伏其中而不能被及时的发现。这些潜伏的问题在后期被发现时，它的解决成本可能要成倍的增加。&lt;/p&gt;
+
+&lt;p&gt;如果是团队的问题， 那么团队中任何人都有义务去解决它。要形成高度团队紧密合作的文化， 分配合适的人去解决问题，在一开始显得重要。让“无关人员”参与到“别人的过错当中” 简直就是个美妙的开始。把事不关己高高挂起的观念彻底抛之脑后、 发现问题的人也不必当心损伤其他人的利益、解决问题的人获得了更多的context、 团队精神在解决问题时得到升华。 无论从情感上还是从管理上，这都是个不错的开始。&lt;/p&gt;
+
+&lt;p&gt;因此想要让团队反馈气氛活跃、集思广益，并非是领导一时心血来潮“开放权利”，大家就能够放开束缚， 知无不言言无不尽。 罗马不是一天建成的，这样安全环境也不是一天就能够建立起来的，需要团队所有成员用心去创造和维护。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Git commands</title>
+   <link href="http://username.github.com/2012/08/14/git-commands"/>
+   <updated>2012-08-14T00:00:00+00:00</updated>
+   <id>http://username.github.com/2012/08/14/git-commands</id>
+   <content type="html">&lt;p&gt;git是一个分布式的版本控制系统，最初是开发linux内核的版本控制工具。它和svn，cvs不同， 它采用分布式版本控制方式，不需要服务段的支持。&lt;/p&gt;
+
+&lt;p&gt;因此，git无论作为个人项目或者团队开发都是很重要的工具。git正常情况下使用命令来完成任务，因此 checkout掌握和熟悉一些常用的命令会让工作更加有效率。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git checkout &amp;lt;commit&amp;gt; -- filename 这个命令非常有用，它可以方便的签出任意版本下的任意文件到当前的工作区。如果你需要签出某个&amp;lt;commit&amp;gt;,你只需要
+git checkout &amp;lt;commit&amp;gt; 或者git reset &amp;lt;commit&amp;gt; &lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>Linux commands</title>
    <link href="http://username.github.com/2012/05/27/linux-commands"/>
-   <updated>2012-05-27T00:00:00+08:00</updated>
+   <updated>2012-05-27T00:00:00+00:00</updated>
    <id>http://username.github.com/2012/05/27/linux-commands</id>
    <content type="html">&lt;p&gt;Here attached some commands had been used frequently:&lt;/p&gt;
 
+&lt;pre&gt;&lt;code&gt;curl darlinglele.github.com|sed&amp;#39;s/[^a-zA-Z]/ /g&amp;#39; | tr &amp;#39;A-Z &amp;#39; &amp;#39;a-z\n&amp;#39;|grep &amp;#39;[a-z]&amp;#39;|sort -u&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Get the words contained in a page&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rename &amp;#39;/y/A-Z/a-z/&amp;#39; * &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Rename all to lowercase&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;fuser -n tcp 8080&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Find the processes using 8080 port&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;update-alternatives --config java&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Configure java different versions&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ls ./* -D &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Show all directory&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;chmod 777 /var/chef/ -R&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;grant full right of /var/chef and subfolder to any user.&lt;/p&gt;
+&lt;p&gt;Grant full right of /var/chef and subfolder to any user.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;nohub command &amp;amp;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;nohub command &amp;amp;
+eg: nohub jekyll --server &amp;amp;&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;execute command in a new proccess&lt;/p&gt;</content>
+&lt;p&gt;Run command in new precess&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Ctrl+z 
+bg %PID&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Stop and run current process backgroup, the process still hook to the terminal.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sed [option] command files
+eg: sed -i &amp;quot;s/zhixiong/Jason/g&amp;quot;  `grep zhixiong -rl /c/sql/`&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Replace all &amp;#8220;zhixiong&amp;#8221; with &amp;#8220;Jason&amp;#8221; in files return by grep command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ls | awk &amp;#39;{printf(&amp;quot;%s &amp;quot;,$1)}&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Valuable to print with format&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>Cannot load such file   openssl (loadError)</title>
    <link href="http://username.github.com/2012/05/24/cannot-load-such-file---openssl-loaderror"/>
-   <updated>2012-05-24T00:00:00+08:00</updated>
+   <updated>2012-05-24T00:00:00+00:00</updated>
    <id>http://username.github.com/2012/05/24/cannot-load-such-file---openssl-loaderror</id>
    <content type="html">&lt;pre&gt;&lt;code&gt;rvm remove 1.9.x
 sudo apt-get install libssl-dev
@@ -41,7 +113,7 @@ rvm install 1.9.x&lt;/code&gt;&lt;/pre&gt;</content>
  <entry>
    <title>Using http proxy in cygwin</title>
    <link href="http://username.github.com/2012/05/19/cygwin-using-http-proxy"/>
-   <updated>2012-05-19T00:00:00+08:00</updated>
+   <updated>2012-05-19T00:00:00+00:00</updated>
    <id>http://username.github.com/2012/05/19/cygwin-using-http-proxy</id>
    <content type="html">&lt;p&gt;As a windows user, I prefer to use cygwin for the benifit of powerful linux tools . Cygwin provides a collection of linux tools, and brings linux look and feel for windows.&lt;/p&gt;
 
@@ -57,7 +129,7 @@ export http_proxy=&amp;quot;http://proxyserver:port&amp;quot;&lt;/code&gt;&lt;/p
  <entry>
    <title>SSH as a proxy server in Windows</title>
    <link href="http://username.github.com/2012/05/17/windowsssh"/>
-   <updated>2012-05-17T00:00:00+08:00</updated>
+   <updated>2012-05-17T00:00:00+00:00</updated>
    <id>http://username.github.com/2012/05/17/windowsssh</id>
    <content type="html">&lt;p&gt;First of all, we need a proper SSH client, here we use &lt;a href='http://en.wikipedia.org/wiki/PuTTY'&gt;PuTTY&lt;/a&gt;, you can download it &lt;a href='http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe'&gt;here&lt;/a&gt;. And then you can follow the next steps to complete the configuration.&lt;/p&gt;
 
@@ -95,7 +167,7 @@ Connection Type: SSH&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h6 id='enter_the_ssh_user'&gt;Enter the ssh user&lt;/h6&gt;
 
-&lt;pre&gt;&lt;code&gt;Login as : username &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Login as : ubuntu &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id='use_switchysharp_to_sharp_the_chrome'&gt;Use SwitchySharp to sharp the chrome&lt;/h4&gt;
 
@@ -122,7 +194,7 @@ When the url you are requesting is in the list, the request will forward to port
  <entry>
    <title>在ubuntu中安装zlib</title>
    <link href="http://username.github.com/Notes/2012/05/05/ubuntuzlib"/>
-   <updated>2012-05-05T00:00:00+08:00</updated>
+   <updated>2012-05-05T00:00:00+00:00</updated>
    <id>http://username.github.com/Notes/2012/05/05/ubuntuzlib</id>
    <content type="html">&lt;p&gt;在ubuntu 12.04中安装好rvm 和ruby，使用gem install rake 命令来安装rake，安装过程中发现 no such file to load &amp;#8211;zlib 错误。&lt;/p&gt;
 
@@ -143,9 +215,9 @@ rvm install 1.9.3&lt;/code&gt;&lt;/pre&gt;</content>
  <entry>
    <title>About Javascript Function</title>
    <link href="http://username.github.com/Javascript/2012/05/05/javascript-function"/>
-   <updated>2012-05-05T00:00:00+08:00</updated>
+   <updated>2012-05-05T00:00:00+00:00</updated>
    <id>http://username.github.com/Javascript/2012/05/05/javascript-function</id>
-   <content type="html">&lt;h4 id='id41'&gt;一切皆是对象&lt;/h4&gt;
+   <content type="html">&lt;h4 id='id1'&gt;一切皆是对象&lt;/h4&gt;
 
 &lt;p&gt;函数在诸如python以及ruby的动态语言当中被当作是一等公民，相比叫静态语言，在这些语言当中函数可以不依托在任何的类或者实例，即可定义和调用。在web前端交互面向对象语言javascript同样具有这样的语言能力，因此我们可以这样来定义和调用一个function:&lt;/p&gt;
 
@@ -168,7 +240,7 @@ function DrawMoney(count, callback){
 
 drawMoney(40612002,printLog); &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h4 id='id42'&gt;灵活的调用方式&lt;/h4&gt;
+&lt;h4 id='id2'&gt;灵活的调用方式&lt;/h4&gt;
 
 &lt;p&gt;关于函数调用，静态语言当中我们或者是通过类或者是通过对象实例或者是通过委托，但无一不是类型确定的。如果是静态方法，那么只能通过类来调用，如果是实例方法那么只能由实例对象来调用。所用函数的上下文在编译时就已经确定了：&lt;/p&gt;
 
@@ -276,7 +348,7 @@ guy.say();&lt;/code&gt;&lt;/pre&gt;
  <entry>
    <title>Clean code notes</title>
    <link href="http://username.github.com/Refactor/2012/04/27/clean-code-notes"/>
-   <updated>2012-04-27T00:00:00+08:00</updated>
+   <updated>2012-04-27T00:00:00+00:00</updated>
    <id>http://username.github.com/Refactor/2012/04/27/clean-code-notes</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;处理Try/Catch&lt;/strong&gt;&lt;/p&gt;
 
@@ -308,7 +380,7 @@ public void deletePage(){
  <entry>
    <title>hello world</title>
    <link href="http://username.github.com/2012/04/05/hello-world"/>
-   <updated>2012-04-05T00:00:00+08:00</updated>
+   <updated>2012-04-05T00:00:00+00:00</updated>
    <id>http://username.github.com/2012/04/05/hello-world</id>
    <content type="html">&lt;p&gt;This is the first blog using markdown file!&lt;/p&gt;
 

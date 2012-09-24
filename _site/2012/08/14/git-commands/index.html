@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Using http proxy in cygwin</title>
+    <title>Git commands</title>
     <meta name="description" content="">
     <meta name="author" content="Lin Zhixiong">
 
@@ -95,29 +95,26 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Using http proxy in cygwin <small>Supporting tagline</small></h1>
+  <h1>Git commands <small>Supporting tagline</small></h1>
 </div>
 
 <div class="row">
   <div class="span8">
-    <p>As a windows user, I prefer to use cygwin for the benifit of powerful linux tools . Cygwin provides a collection of linux tools, and brings linux look and feel for windows.</p>
+    <p>git是一个分布式的版本控制系统，最初是开发linux内核的版本控制工具。它和svn，cvs不同， 它采用分布式版本控制方式，不需要服务段的支持。</p>
 
-<p>In some organization secutity policy, they use http proxy to connect internet. For many applications(eg.IE), it&#8217;s necessary to config the http proxy for internet accessable. For cygwin there are many tools need connect to internet, so the first thing for me is to config http proxy for cygwin. It&#8217;s straightforward and easy, just one line:</p>
+<p>因此，git无论作为个人项目或者团队开发都是很重要的工具。git正常情况下使用命令来完成任务，因此 checkout掌握和熟悉一些常用的命令会让工作更加有效率。</p>
 
-<pre><code>export http_proxy=&quot;http://username:password@proxyserver:port&quot;
-or
-export http_proxy=&quot;http://proxyserver:port&quot;</code></pre>
-
-<p>For write once run every times, it is a good idea to save the command into .bash_profile file.</p>
+<pre><code>git checkout &lt;commit&gt; -- filename 这个命令非常有用，它可以方便的签出任意版本下的任意文件到当前的工作区。如果你需要签出某个&lt;commit&gt;,你只需要
+git checkout &lt;commit&gt; 或者git reset &lt;commit&gt; </code></pre>
     <hr>
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/2012/05/17/windowsssh" title="SSH as a proxy server in Windows">&larr; Previous</a></li>
+        <li class="prev"><a href="/2012/05/27/linux-commands" title="Linux commands">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/2012/05/24/cannot-load-such-file---openssl-loaderror" title="Cannot load such file   openssl (loadError)">Next &rarr;</a></li>
+        <li class="next"><a href="/2012/09/24/" title="任何做好沟通">Next &rarr;</a></li>
       
       </ul>
     </div>
@@ -147,7 +144,7 @@ export http_proxy=&quot;http://proxyserver:port&quot;</code></pre>
   
   <div class="span4">
     <h4>Published</h4>
-    <div class="date"><span>19 May 2012</span></div>
+    <div class="date"><span>14 August 2012</span></div>
 
   
     <h4>Tags</h4>
@@ -158,9 +155,7 @@ export http_proxy=&quot;http://proxyserver:port&quot;</code></pre>
 
   
      
-    	<li><a href="/tags.html#cygwin-ref">cygwin <span>1</span></a></li>
-     
-    	<li><a href="/tags.html#http proxy-ref">http proxy <span>1</span></a></li>
+    	<li><a href="/tags.html#git checkout reset revert-ref">git checkout reset revert <span>1</span></a></li>
     
   
 
